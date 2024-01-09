@@ -10,8 +10,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Sidebar />
-      <Page />
+      <div className="Container">
+        <Sidebar />
+        <Page />
+      </div>
       <Footer />
       <Error />
       <About />
