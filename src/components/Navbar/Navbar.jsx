@@ -1,10 +1,10 @@
 import React from "react";
-import "../components/Navbar.css";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
     <nav>
-      <p>Navbar</p>
+      <h1>🍱 The Ultimate Recipe Book</h1>
     </nav>
   );
 }

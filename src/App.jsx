@@ -1,10 +1,10 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
-import Page from "./components/Page";
-import Error from "./components/Error";
-import About from "./components/About";
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Footer from "./components/Footer/Footer";
+import Page from "./components/Page/Page";
+import Error from "./components/Error/Error";
+import About from "./components/About/About";
 
 function App() {
   return (
