@@ -1,4 +1,14 @@
 .Sidebar {
   border: 1px solid black;
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.Sidebar a {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  text-decoration: none;
 }

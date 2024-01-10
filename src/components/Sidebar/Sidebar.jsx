@@ -4,7 +4,8 @@ import "./Sidebar.css";
 export default function Sidebar() {
   return (
     <div className="Sidebar">
-      <h1>Sidebar</h1>
+      <a href="../About/About.jsx">About</a>
+      <a href="../Error/Error.jsx">Error 404</a>
     </div>
   );
 }
