@@ -1,6 +1,6 @@
 import React from "react";
 import "./Page.css";
-import JSONreipes from "../../assets/recipes.json";
+import JSONrecipes from "../../assets/recipes.json";
 
 export default function Page() {
   return (
