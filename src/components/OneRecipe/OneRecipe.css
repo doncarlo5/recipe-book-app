@@ -1,0 +1,17 @@
+.OneRecipe {
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 3px;
+  transition: box-shadow 0.2s ease-in-out;
+
+  img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+  }
+}
+
+.OneRecipe:hover {
+  /* box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1); */
+  box-shadow: 2px 2px 0 rgb(58, 208, 75), 4px 4px 0 rgb(109, 64, 225),
+    6px 6px 0 rgb(56, 153, 218);
+}

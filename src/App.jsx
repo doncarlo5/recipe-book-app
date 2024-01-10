@@ -12,7 +12,9 @@ function App() {
       <Navbar />
       <div className="Container">
         <Sidebar />
-        <RecipeList />
+        <div className="List">
+          <RecipeList />
+        </div>
       </div>
       <Footer />
       <Error />

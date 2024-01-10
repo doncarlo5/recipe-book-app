@@ -1,4 +1,8 @@
 .RecipeList {
-  border: 1px solid black;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
 }

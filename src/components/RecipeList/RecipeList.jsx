@@ -7,11 +7,9 @@ function RecipeList() {
   const [recipes, SetRecipes] = useState(JSONrecipes);
   return (
     <div className="RecipeList">
-      <div>
-        {recipes.map((recipe) => (
-          <OneRecipe key={recipe.id} recipe={recipe} />
-        ))}
-      </div>
+      {recipes.map((recipe) => (
+        <OneRecipe key={recipe.id} recipe={recipe} />
+      ))}
     </div>
   );
 }
