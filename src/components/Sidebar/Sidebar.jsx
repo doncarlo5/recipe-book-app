@@ -6,13 +6,7 @@ export default function Sidebar({ sortByCalories }) {
   return (
     <div className="Sidebar">
       <h3>Filters</h3>
-      <button
-        onClick={() => {
-          sortByCalories;
-        }}
-      >
-        Filter by Calories
-      </button>
+      <button onClick={() => sortByCalories()}>Filter by Calories</button>
       <p>
         Made with 💚 in Paris. Know more <Link to="/about">about us 👨🏻‍💻👩🏽‍💻</Link>
       </p>
