@@ -5,8 +5,3 @@
 body {
   margin: 0;
 }
-
-.Container {
-  display: flex;
-  justify-content: space-between;
-}
