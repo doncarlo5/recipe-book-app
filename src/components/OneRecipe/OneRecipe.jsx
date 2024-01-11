@@ -1,7 +1,7 @@
 import React from "react";
 import "./OneRecipe.css";
 
-function OneRecipe({ recipe }) {
+function OneRecipe({ recipe, handleDelete }) {
   return (
     <article className="OneRecipe">
       <div>
@@ -17,6 +17,7 @@ function OneRecipe({ recipe }) {
           <span>Servings:</span>
           {recipe.servings}
         </p>
+        <button onClick={() => handleDelete(recipe.id)}>Delete</button>
       </div>
     </article>
   );
