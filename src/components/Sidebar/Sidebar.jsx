@@ -1,11 +1,12 @@
 import React from "react";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
     <div className="Sidebar">
-      <a href="../About/About.jsx">About</a>
-      <a href="../Error/Error.jsx">Error 404</a>
+      <Link to="/about">About</Link>
+      <Link to="*">Error 404</Link>
     </div>
   );
 }

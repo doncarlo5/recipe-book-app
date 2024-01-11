@@ -1,24 +1,21 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer/Footer";
-import RecipeList from "./components/RecipeList/RecipeList";
-import Error from "./components/Error/Error";
-import About from "./components/About/About";
+import ErrorPage from "./pages/Error/ErrorPage";
+import AboutPage from "./pages/About/AboutPage";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <div className="Container">
-        <Sidebar />
-        <div className="List">
-          <RecipeList />
-        </div>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
       <Footer />
-      <Error />
-      <About />
     </div>
   );
 }
