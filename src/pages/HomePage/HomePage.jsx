@@ -15,17 +15,35 @@ function HomePage() {
     SetRecipes(remainingRecipes);
   }
 
-  function sortByCalories() {
-    const copy = structuredClone(recipes);
-    copy.sort((recipeA, recipeB) => {
-      return recipeA.calories - recipeB.calories;
-    });
-    SetRecipes(copy);
+  function sortByCalories(isChecked) {
+    if (isChecked) {
+      const copy = structuredClone(recipes);
+      copy.sort((recipeA, recipeB) => {
+        return recipeA.calories - recipeB.calories;
+      });
+      SetRecipes(copy);
+    } else {
+      SetRecipes(JSONrecipes);
+    }
+  }
+
+  function toggleVegetarianFilter(isChecked) {
+    if (isChecked) {
+      const vegetarianRecipes = recipes.filter((recipe) => {
+        return recipe.isVegetarian === true;
+      });
+      SetRecipes(vegetarianRecipes);
+    } else {
+      SetRecipes(JSONrecipes);
+    }
   }
 
   return (
     <div className="Container">
-      <Sidebar sortByCalories={sortByCalories} />
+      <Sidebar
+        sortByCalories={sortByCalories}
+        toggleVegetarianFilter={toggleVegetarianFilter}
+      />
       <RecipeList handleDelete={handleDelete} recipes={recipes} />
     </div>
   );
