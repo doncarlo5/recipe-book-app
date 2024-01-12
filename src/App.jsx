@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import ErrorPage from "./pages/Error/ErrorPage";
 import AboutPage from "./pages/About/AboutPage";
 import HomePage from "./pages/HomePage/HomePage";
+import SearchPage from "./pages/SearchPage/SearchPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/search" element={<SearchPage />}></Route>
       </Routes>
       <Footer />
     </div>
