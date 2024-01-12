@@ -16,7 +16,6 @@ function HomePage() {
   }
 
   function sortByCalories() {
-    console.log("hello");
     const copy = structuredClone(recipes);
     copy.sort((recipeA, recipeB) => {
       return recipeA.calories - recipeB.calories;
