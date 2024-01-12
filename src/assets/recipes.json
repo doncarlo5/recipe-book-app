@@ -4,118 +4,135 @@
     "name": "Blanquette de veau à l'ancienne",
     "calories": 300,
     "image": "https://www.academiedugout.fr/images/7983/948-580/blanquette-de-veau.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": false
   },
   {
     "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",
     "name": "Poulet rôti aux herbes",
     "calories": 250,
     "image": "https://www.academiedugout.fr/images/27999/300-220/poulet-aux-herbes.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": false
   },
   {
     "id": "b5eb5b5f-41b8-4f1f-8844-7a1a56a17df7",
     "name": "Velouté de panais, brebis et parmesan",
     "calories": 120,
     "image": "https://www.academiedugout.fr/images/51561/300-220/10097-veloute-de-panais-fromage-de-brebis-battu-et-parmesan-du-pauvre.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "6c0f6f33-8c50-403d-9d1c-6ac9d8b77f29",
     "name": "Tarte aux pommes et camembert",
     "calories": 500,
     "image": "https://www.academiedugout.fr/images/75128/300-220/nina-metayer-1.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "f4b4d2bc-ff12-4f3f-b3b3-19d2f1682401",
     "name": "Boeuf bourguignon",
     "calories": 350,
     "image": "https://www.academiedugout.fr/images/4747/300-220/index.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": false
   },
   {
     "id": "bf89c1db-5c5b-4262-9d1e-8a68f88c61d5",
     "name": "Pomme de terre confites aux herbes",
     "calories": 750,
     "image": "https://www.academiedugout.fr/images/4875/300-220/julie_recette_pommes_de_terre_aux_confites_aux_herbes_img_4755.eps.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "bca9beec-43d3-48b1-9b57-793a8a8c3520",
     "name": "Falafels",
     "calories": 400,
     "image": "https://www.academiedugout.fr/images/12223/300-220/033-falafel1619.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "b777a69a-7f1c-41e8-8a4c-1d0e9e4cace8",
     "name": "Pad Thai",
     "calories": 475,
     "image": "https://i.imgur.com/5ktcSzF.jpg",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": false
   },
   {
     "id": "d087343e-9a92-48c7-8b27-43e37491b6f5",
     "name": "Tian de légumes provençal",
     "calories": 75,
     "image": "https://www.academiedugout.fr/images/77544/300-220/45-tian-legumes.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "e1f87a2e-60b3-4a3f-bb48-20a396a9a94f",
     "name": "Sarma",
     "calories": 200,
     "image": "https://i.imgur.com/yOlf4Fj.jpg",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": false
   },
   {
     "id": "0ce7e4d4-1c8a-4e9f-98df-1ecb1e7b8a0b",
     "name": "Épinards et oeufs mollets",
     "calories": 175,
     "image": "https://www.academiedugout.fr/images/72112/300-220/mh_epinards_oeuf_mollet.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "bbfd30fd-cd75-4e3b-8fc8-3d3fd62a3c39",
     "name": "Fusilli alla norma",
     "calories": 275,
     "image": "https://www.academiedugout.fr/images/71855/300-220/pasta_seches_fusilli_norma.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "1c6d5b5f-4e72-4136-8c6c-9cf3e3d16a65",
     "name": "Burger aux pleurotes et kimchi",
     "calories": 490,
     "image": "https://www.academiedugout.fr/images/75308/300-220/whatsapp-image-2020-10-19-at-15.33.12-2-3-1.jpeg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "07d9616d-7a63-457c-b8a7-58f6a70a67e3",
     "name": "Charlotte chocolat blanc et spéculoos",
     "calories": 175,
     "image": "https://www.academiedugout.fr/images/46901/300-220/rcharlotte-chocolat-blanc-speculoos.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   },
   {
     "id": "d7a8f0c1-0a34-4e3b-a2d3-3c3e3f11eb19",
     "name": "Tajine de poulet aux olives et citrons confits",
     "calories": 85,
     "image": "https://www.academiedugout.fr/images/77557/300-220/14-tajine-poulet.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": false
   },
   {
     "id": "a8d111c4-50ef-4c61-8b16-17e84a86b2f4",
     "name": "Risotto aux noix de Saint-Jacques",
     "calories": 175,
     "image": "https://www.academiedugout.fr/images/76567/300-220/recettes-coquilles-nov212637.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": false
   },
   {
     "id": "62d8a0bc-1b77-4389-9e7b-2e00cace6a2e",
     "name": "Tarte tatin",
     "calories": 125,
     "image": "https://www.academiedugout.fr/images/76650/237-auto/tatin.jpg?poix=50&poiy=50",
-    "servings": 1
+    "servings": 1,
+    "isVegetarian": true
   }
 ]
