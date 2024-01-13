@@ -1,0 +1,17 @@
+.Footer {
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.Footer p {
+  margin: 0;
+  padding: 8px;
+}
+
+.Footer a {
+  color: dodgerblue;
+  text-decoration: none;
+}

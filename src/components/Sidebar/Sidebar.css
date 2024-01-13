@@ -1,14 +1,17 @@
 .Sidebar {
-  background-color: whitesmoke;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  flex: none;
+  width: 200px;
+  background-color: rgb(245, 245, 245);
+  color: black;
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-image: radial-gradient(rgb(0, 0, 0), rgb(245, 245, 245)) 1;
 }
 
 .Sidebar a {
-  margin-top: 20px;
-  margin-left: 20px;
   display: flex;
   text-decoration: none;
 }
