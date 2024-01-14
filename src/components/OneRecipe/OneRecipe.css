@@ -17,3 +17,8 @@
   /* box-shadow: 2px 2px 0 rgb(58, 208, 75), 4px 4px 0 rgb(109, 64, 225),
     6px 6px 0 rgb(56, 153, 218); */
 }
+
+.OneRecipe img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
