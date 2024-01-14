@@ -4,14 +4,43 @@
   top: 0;
   flex: none;
   width: 200px;
-  background-color: rgb(245, 245, 245);
+  background-color: #edf2ef;
   color: black;
   border-right-width: 2px;
   border-right-style: solid;
   border-image: radial-gradient(rgb(0, 0, 0), rgb(245, 245, 245)) 1;
+  padding: 2rem 1rem;
+  & h3 {
+    color: #471323a8;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
 }
 
 .Sidebar a {
   display: flex;
   text-decoration: none;
+}
+
+.Sidebar hr {
+  width: 50%;
+}
+
+.Sidebar-checkbox {
+  padding: 2rem 0rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.1;
+  display: grid;
+  gap: 0.5em;
+}
+
+.Sidebar-info {
+  margin-top: 70%;
+  a {
+    padding: 10px;
+    font-weight: bold;
+  }
 }
