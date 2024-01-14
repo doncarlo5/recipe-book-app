@@ -9,6 +9,8 @@
 .Footer p {
   margin: 0;
   padding: 8px;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .Footer a {

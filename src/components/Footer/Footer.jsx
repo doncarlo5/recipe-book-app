@@ -7,7 +7,7 @@ export default function Footer() {
       <p>
         Link to{" "}
         <a href="https://github.com/doncarlo5/recipe-book-app">GitHub</a>. Open
-        to suggestions 🍻
+        to suggestions ☕️
       </p>
     </div>
   );
