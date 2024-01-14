@@ -1,5 +1,8 @@
 import React from "react";
 import "./OneRecipe.css";
+import { motion } from "framer-motion";
+
+//! Change name to RecipeCard
 
 function OneRecipe({ recipe, handleDelete }) {
   return (
