@@ -12,15 +12,15 @@ export default function Navbar() {
       </NavLink>
       {/* don't forget to deal with handleSubmit */}
       {/* <form onSubmit={handleSubmit}> */}
-      <div className="SearchBar">
+      <div>
         <input
+          className="Search-Input"
           type="search"
           // value={search}
           // onChange={(e) => setSearch(e.target.value)}
           // name=""
           // id=""
         />
-        <button>🔍</button>
         {/* </form> */}
       </div>
     </nav>
