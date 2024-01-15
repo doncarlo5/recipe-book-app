@@ -4,9 +4,21 @@ import React from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import RecipeList from "../../components/RecipeList/RecipeList";
 import JSONrecipes from "../../assets/recipes.json";
+import { useSearchParams } from "react-router-dom";
 
 function HomePage() {
   const [recipes, SetRecipes] = useState(JSONrecipes);
+  const [searchParams, SetSearchParams] = useSearchParams();
+  const searchedName = searchParams.get("name");
+
+  let displayRecipes = recipes;
+
+  if (searchedName) {
+    displayRecipes = recipes.filter((recipe) => {
+      const regexp = new RegExp(searchedName, "gi");
+      return recipe.name.match(regexp);
+    });
+  }
 
   function handleDelete(id) {
     const remainingRecipes = recipes.filter((recipe) => {
@@ -44,7 +56,7 @@ function HomePage() {
         sortByCalories={sortByCalories}
         toggleVegetarianFilter={toggleVegetarianFilter}
       />
-      <RecipeList handleDelete={handleDelete} recipes={recipes} />
+      <RecipeList handleDelete={handleDelete} recipes={displayRecipes} />
     </div>
   );
 }

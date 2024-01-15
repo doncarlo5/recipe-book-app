@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import "./Navbar.css";
 
 export default function Navbar() {
-  // const [search, setSearch] = useState("");
+  const navigate = useNavigate();
+
+  function handleKeyDown(event) {
+    if (event.key === "Enter") {
+      navigate(`/?name=${event.target.value}`);
+    }
+  }
+
   return (
     <nav className="NavBar">
       <NavLink to="/">
@@ -17,11 +24,10 @@ export default function Navbar() {
           className="Search-Input"
           type="search"
           // value={search}
-          // onChange={(e) => setSearch(e.target.value)}
+          onKeyDown={(e) => handleKeyDown(e)}
           // name=""
           // id=""
         />
-        {/* </form> */}
       </div>
     </nav>
   );
