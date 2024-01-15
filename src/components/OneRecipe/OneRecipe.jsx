@@ -1,16 +1,15 @@
 import React from "react";
 import "./OneRecipe.css";
-import { motion } from "framer-motion";
 
 //! Change name to RecipeCard
 
 function OneRecipe({ recipe, handleDelete }) {
   return (
     <article className="OneRecipe">
-      <div>
+      <div className="RecipeCard-img">
         <img src={recipe.image} alt={recipe.name} />
       </div>
-      <div classeName="recipe-content">
+      <div className="RecipeCard-content">
         <h3>{recipe.name}</h3>
         <p>
           <span>Calories:</span>
@@ -20,7 +19,7 @@ function OneRecipe({ recipe, handleDelete }) {
           <span>Servings:</span>
           {recipe.servings}
         </p>
-        <button onClick={() => handleDelete(recipe.id)}>Delete</button>
+        <button onClick={() => handleDelete(recipe.id)}>🗑️</button>
       </div>
     </article>
   );
