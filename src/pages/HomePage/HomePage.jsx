@@ -3,10 +3,12 @@ import { useState } from "react";
 import React from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import RecipeList from "../../components/RecipeList/RecipeList";
+import AddRecipeForm from "../../components/AddRecipeForm/AddRecipeForm";
 import JSONrecipes from "../../assets/recipes.json";
 
 function HomePage() {
   const [recipes, SetRecipes] = useState(JSONrecipes);
+  const [showForm, setShowForm] = useState(false);
 
   function handleDelete(id) {
     const remainingRecipes = recipes.filter((recipe) => {
@@ -23,7 +25,7 @@ function HomePage() {
       });
       SetRecipes(copy);
     } else {
-      SetRecipes(JSONrecipes);
+      SetRecipes(recipes);
     }
   }
 
@@ -34,8 +36,12 @@ function HomePage() {
       });
       SetRecipes(vegetarianRecipes);
     } else {
-      SetRecipes(JSONrecipes);
+      SetRecipes(recipes);
     }
+  }
+
+  function addToRecipes(newRecipe) {
+    SetRecipes([newRecipe, ...recipes]);
   }
 
   return (
@@ -43,7 +49,11 @@ function HomePage() {
       <Sidebar
         sortByCalories={sortByCalories}
         toggleVegetarianFilter={toggleVegetarianFilter}
+        setShowForm={setShowForm}
       />
+      {showForm && (
+        <AddRecipeForm addToRecipes={addToRecipes} setShowForm={setShowForm} />
+      )}
       <RecipeList handleDelete={handleDelete} recipes={recipes} />
     </div>
   );

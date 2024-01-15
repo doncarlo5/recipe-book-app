@@ -2,7 +2,11 @@ import React from "react";
 import "./Sidebar.css";
 import { Link } from "react-router-dom";
 
-export default function Sidebar({ sortByCalories, toggleVegetarianFilter }) {
+export default function Sidebar({
+  sortByCalories,
+  toggleVegetarianFilter,
+  setShowForm,
+}) {
   return (
     <div className="Sidebar">
       <h3>FILTERS</h3>
@@ -24,6 +28,9 @@ export default function Sidebar({ sortByCalories, toggleVegetarianFilter }) {
           />
           <label htmlFor="vegetarian">Only vegetarian 🥬</label>
         </div>
+        <button onClick={() => setShowForm((currentState) => !currentState)}>
+          ⊕ Add New Recipe
+        </button>
       </div>
       <div className="Sidebar-info">
         <hr />
