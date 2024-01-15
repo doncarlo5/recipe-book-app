@@ -5,10 +5,22 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import RecipeList from "../../components/RecipeList/RecipeList";
 import AddRecipeForm from "../../components/AddRecipeForm/AddRecipeForm";
 import JSONrecipes from "../../assets/recipes.json";
+import { useSearchParams } from "react-router-dom";
 
 function HomePage() {
   const [recipes, SetRecipes] = useState(JSONrecipes);
   const [showForm, setShowForm] = useState(false);
+  const [searchParams, SetSearchParams] = useSearchParams();
+  const searchedName = searchParams.get("name");
+
+  let displayRecipes = recipes;
+
+  if (searchedName) {
+    displayRecipes = recipes.filter((recipe) => {
+      const regexp = new RegExp(searchedName, "gi");
+      return recipe.name.match(regexp);
+    });
+  }
 
   function handleDelete(id) {
     const remainingRecipes = recipes.filter((recipe) => {
@@ -54,7 +66,7 @@ function HomePage() {
       {showForm && (
         <AddRecipeForm addToRecipes={addToRecipes} setShowForm={setShowForm} />
       )}
-      <RecipeList handleDelete={handleDelete} recipes={recipes} />
+      <RecipeList handleDelete={handleDelete} recipes={displayRecipes} />
     </div>
   );
 }

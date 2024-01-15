@@ -22,16 +22,13 @@ function RecipeList({ handleDelete, recipes }) {
     <div className="RecipeList">
       {recipes.map((recipe) => (
         <motion.div
+          key={recipe.id}
           variants={cardVariants}
           initial="initial"
           whileInView="onscreen"
           viewport={{ once: true }}
         >
-          <OneRecipe
-            key={recipe.id}
-            recipe={recipe}
-            handleDelete={handleDelete}
-          />
+          <OneRecipe recipe={recipe} handleDelete={handleDelete} />
         </motion.div>
       ))}
     </div>
