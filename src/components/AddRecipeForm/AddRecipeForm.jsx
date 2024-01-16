@@ -23,27 +23,31 @@ function AddRecipeForm({ setShowForm, addToRecipes }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name :</label>
+    <form className="AddRecipeForm" onSubmit={handleSubmit}>
+      <label htmlFor="name">
+        <p>Name :</p>
         <input
           type="text"
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          placeholder="Enter recipe name"
         />
-      </div>
-      <div>
-        <label htmlFor="image">Image :</label>
+      </label>
+
+      <label htmlFor="image">
+        <p>Image :</p>
         <input
           type="text"
           id="image"
           value={image}
           onChange={(e) => setImage(e.target.value)}
+          placeholder="Enter image URL"
         />
-      </div>
-      <div>
-        <label htmlFor="calories">Calories :</label>
+      </label>
+
+      <label htmlFor="calories">
+        <p>Calories :</p>
         <input
           type="number"
           id="calories"
@@ -51,9 +55,10 @@ function AddRecipeForm({ setShowForm, addToRecipes }) {
           value={calories}
           onChange={(e) => setCalories(e.target.value)}
         />
-      </div>
-      <div>
-        <label htmlFor="servings">Servings :</label>
+      </label>
+
+      <label htmlFor="servings">
+        <p>Servings :</p>
         <input
           type="number"
           id="servings"
@@ -61,16 +66,17 @@ function AddRecipeForm({ setShowForm, addToRecipes }) {
           value={servings}
           onChange={(e) => setServings(e.target.value)}
         />
-      </div>
-      <div>
-        <label htmlFor="vegetarian">Vegeratian</label>
+      </label>
+
+      <label htmlFor="vegetarian">
+        <p>Vegetarian</p>
         <input
           type="checkbox"
           id="vegetarian"
           checked={vegetarian}
           onChange={(e) => setVegetarian(e.target.checked)}
         />
-      </div>
+      </label>
       <button>Add Recipe</button>
     </form>
   );

@@ -1,0 +1,54 @@
+.AddRecipeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50vh;
+  margin: 20px auto;
+}
+
+.AddRecipeForm div {
+  margin-bottom: 15px;
+}
+
+.AddRecipeForm label {
+  display: flex;
+  margin-bottom: 5px;
+  width: 40vh;
+  align-items: center;
+}
+
+.AddRecipeForm p {
+  margin: 0;
+  width: 20vh;
+}
+
+.AddRecipeForm input {
+  padding: 5px;
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+}
+
+.AddRecipeForm button {
+  padding: 5px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.AddRecipeForm button {
+  background-color: #4caf50;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.AddRecipeForm button:hover {
+  background-color: #45a049;
+}

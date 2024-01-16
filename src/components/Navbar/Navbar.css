@@ -11,6 +11,14 @@
   justify-content: space-between;
 }
 
+a:hover {
+  transform: scale(1.03);
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+}
+
 a:link {
   text-decoration: none;
 }

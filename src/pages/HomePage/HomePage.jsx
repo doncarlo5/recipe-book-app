@@ -63,10 +63,15 @@ function HomePage() {
         toggleVegetarianFilter={toggleVegetarianFilter}
         setShowForm={setShowForm}
       />
-      {showForm && (
-        <AddRecipeForm addToRecipes={addToRecipes} setShowForm={setShowForm} />
-      )}
-      <RecipeCard handleDelete={handleDelete} recipes={displayRecipes} />
+      <div className="Container-Add-RecipeCard">
+        {showForm && (
+          <AddRecipeForm
+            addToRecipes={addToRecipes}
+            setShowForm={setShowForm}
+          />
+        )}
+        <RecipeCard handleDelete={handleDelete} recipes={displayRecipes} />
+      </div>
     </div>
   );
 }

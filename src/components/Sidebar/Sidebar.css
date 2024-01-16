@@ -44,3 +44,29 @@
     font-weight: bold;
   }
 }
+
+.Sidebar button {
+  width: 50%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Sidebar button:hover {
+  background-color: #45a049;
+}
+
+.Sidebar button:active {
+  background-color: red;
+}
+.Sidebar button.clicked {
+  transform: rotate(45deg);
+}
