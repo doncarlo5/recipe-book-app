@@ -17,8 +17,6 @@ export default function Navbar() {
       <NavLink to="/">
         <h1>📖 The Ultimate Recipe Book</h1>
       </NavLink>
-      {/* don't forget to deal with handleSubmit */}
-      {/* <form onSubmit={handleSubmit}> */}
       <div>
         <input
           className="Search-Input"

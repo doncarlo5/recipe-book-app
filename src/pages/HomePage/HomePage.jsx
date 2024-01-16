@@ -11,13 +11,13 @@ function HomePage() {
   const [recipes, SetRecipes] = useState(JSONrecipes);
   const [showForm, setShowForm] = useState(false);
   const [searchParams, SetSearchParams] = useSearchParams();
-  const searchedName = searchParams.get("name");
+  const searchedLetters = searchParams.get("name");
 
   let displayRecipes = recipes;
 
-  if (searchedName) {
+  if (searchedLetters) {
     displayRecipes = recipes.filter((recipe) => {
-      const regexp = new RegExp(searchedName, "gi");
+      const regexp = new RegExp(searchedLetters, "gi");
       return recipe.name.match(regexp);
     });
   }
