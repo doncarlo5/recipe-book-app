@@ -1,11 +1,9 @@
 import React from "react";
-import "./OneRecipe.css";
+import "./RecipeCard.css";
 
-//! Change name to RecipeCard
-
-function OneRecipe({ recipe, handleDelete }) {
+function RecipeCard({ recipe, handleDelete }) {
   return (
-    <article className="OneRecipe">
+    <article className="RecipeCard">
       <div className="RecipeCard-img">
         <img src={recipe.image} alt={recipe.name} />
       </div>
@@ -25,4 +23,4 @@ function OneRecipe({ recipe, handleDelete }) {
   );
 }
 
-export default OneRecipe;
+export default RecipeCard;

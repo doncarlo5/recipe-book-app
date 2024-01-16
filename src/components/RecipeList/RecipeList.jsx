@@ -1,6 +1,6 @@
 import React from "react";
 import "./RecipeList.css";
-import OneRecipe from "../OneRecipe/OneRecipe";
+import RecipeCard from "../RecipeCard/RecipeCard";
 import { motion } from "framer-motion";
 
 const cardVariants = {
@@ -28,7 +28,7 @@ function RecipeList({ handleDelete, recipes }) {
           whileInView="onscreen"
           viewport={{ once: true }}
         >
-          <OneRecipe recipe={recipe} handleDelete={handleDelete} />
+          <RecipeCard recipe={recipe} handleDelete={handleDelete} />
         </motion.div>
       ))}
     </div>
