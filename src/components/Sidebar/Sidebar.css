@@ -45,15 +45,22 @@
   }
 }
 
+.AddRecipeButton {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .Sidebar button {
-  width: 50%;
-  padding: 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 24px;
   background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 1em;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -28,9 +28,12 @@ export default function Sidebar({
           />
           <label htmlFor="vegetarian">Only vegetarian 🥬</label>
         </div>
-        <button onClick={() => setShowForm((currentState) => !currentState)}>
-          ⊕ Add
-        </button>
+        <div className="AddRecipeButton">
+          <p>Add Recipe</p>
+          <button onClick={() => setShowForm((currentState) => !currentState)}>
+            ✚
+          </button>
+        </div>
       </div>
       <div className="Sidebar-info">
         <hr />

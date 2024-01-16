@@ -17,8 +17,8 @@ function RecipeCard({ recipe, handleDelete }) {
           <span>Servings:</span>
           {recipe.servings}
         </p>
-        <button onClick={() => handleDelete(recipe.id)}>🗑️</button>
       </div>
+      <button onClick={() => handleDelete(recipe.id)}>x</button>
     </article>
   );
 }
