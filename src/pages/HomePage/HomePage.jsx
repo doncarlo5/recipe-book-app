@@ -37,7 +37,7 @@ function HomePage() {
       });
       SetRecipes(copy);
     } else {
-      SetRecipes(recipes);
+      SetRecipes(JSONrecipes);
     }
   }
 
@@ -48,7 +48,7 @@ function HomePage() {
       });
       SetRecipes(vegetarianRecipes);
     } else {
-      SetRecipes(recipes);
+      SetRecipes(JSONrecipes);
     }
   }
 
