@@ -2,7 +2,7 @@ import "./HomePage.css";
 import { useState } from "react";
 import React from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import RecipeList from "../../components/RecipeList/RecipeList";
+import RecipeCard from "../../components/RecipeList/RecipeList";
 import AddRecipeForm from "../../components/AddRecipeForm/AddRecipeForm";
 import JSONrecipes from "../../assets/recipes.json";
 import { useSearchParams } from "react-router-dom";
@@ -66,7 +66,7 @@ function HomePage() {
       {showForm && (
         <AddRecipeForm addToRecipes={addToRecipes} setShowForm={setShowForm} />
       )}
-      <RecipeList handleDelete={handleDelete} recipes={displayRecipes} />
+      <RecipeCard handleDelete={handleDelete} recipes={displayRecipes} />
     </div>
   );
 }
