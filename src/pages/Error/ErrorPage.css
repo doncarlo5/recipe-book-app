@@ -1,0 +1,30 @@
+.fun-not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comic Sans MS", cursive;
+  background-color: #ffcc00;
+  height: 100vh;
+}
+
+.cook-emojis {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #ff6347;
+  font-size: 2.5em;
+}
+
+p {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.funny-cooking-emojis {
+  font-size: 2.5em;
+  margin-top: 20px;
+}
