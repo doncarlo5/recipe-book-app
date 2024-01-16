@@ -12,14 +12,17 @@ export default function Error() {
           👩‍🍳
         </span>
       </div>
-      <h1>Uh Oh! 404 - Page Not Found</h1>
-      <p>
-        We tried looking for it in all of our cupboards, but it seems that this
-        page doesn't exist.
-      </p>
-      <p>
-        Try adding some olive oil to your cooking, and everything will be fine!
-      </p>
+      <div className="error-content">
+        <h1>Uh Oh! 404 - Page Not Found</h1>
+        <p>
+          We tried looking for it in all of our cupboards, but it seems that
+          this page doesn't exist.
+        </p>
+        <p>
+          Try adding some olive oil to your cooking, and everything will be
+          fine!
+        </p>
+      </div>
       <div className="funny-cooking-emojis">
         <span role="img" aria-label="Chef Emoji">
           👨‍🍳

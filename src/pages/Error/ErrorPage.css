@@ -13,15 +13,17 @@
   margin-bottom: 20px;
 }
 
-h1 {
-  color: #ff6347;
-  font-size: 3em;
-}
+.error-content {
+  h1 {
+    color: #ff6347;
+    font-size: 3em;
+  }
 
-p {
-  color: #333;
-  font-size: 1.5em;
-  margin-bottom: 20px;
+  p {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
 }
 
 .funny-cooking-emojis {
