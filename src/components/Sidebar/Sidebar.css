@@ -69,10 +69,12 @@
 
 .Sidebar button:hover {
   background-color: #45a049;
+  transform: scale(1.07);
 }
 
 .Sidebar button:active {
-  background-color: red;
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+  transform: scale(0.92);
 }
 .Sidebar button.clicked {
   transform: rotate(45deg);

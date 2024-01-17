@@ -46,9 +46,15 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .AddRecipeForm button:hover {
   background-color: #45a049;
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+.AddRecipeForm button:active {
+  box-shadow: inset 5px 5px 10px -5px rgba(0, 0, 0, 0.5);
 }

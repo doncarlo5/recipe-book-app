@@ -26,6 +26,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4),
       0 0 0 2px rgba(255, 255, 255, 0.4) inset;
   }
+  button:active {
+    box-shadow: inset 5px 5px 10px -5px rgba(0, 0, 0, 1);
+  }
 }
 
 article:hover {
@@ -54,6 +57,18 @@ article:hover {
 }
 
 .RecipeCard-content {
+  position: relative;
   padding: 10px;
-  height: 172px;
+  height: 188px;
+  p {
+    margin: 10px;
+  }
+  h3 {
+    margin-top: 3px;
+  }
+}
+
+.svg {
+  display: flex;
+  justify-content: center;
 }
