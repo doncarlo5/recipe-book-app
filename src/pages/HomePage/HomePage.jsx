@@ -8,9 +8,9 @@ import JSONrecipes from "../../assets/recipes.json";
 import { useSearchParams } from "react-router-dom";
 
 function HomePage() {
-  const [recipes, SetRecipes] = useState(JSONrecipes);
+  const [recipes, setRecipes] = useState(JSONrecipes);
   const [showForm, setShowForm] = useState(false);
-  const [searchParams, SetSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const searchedLetters = searchParams.get("name");
 
   let displayRecipes = recipes;
@@ -26,7 +26,7 @@ function HomePage() {
     const remainingRecipes = recipes.filter((recipe) => {
       return recipe.id !== id;
     });
-    SetRecipes(remainingRecipes);
+    setRecipes(remainingRecipes);
   }
 
   function sortByCalories(isChecked) {
@@ -35,9 +35,9 @@ function HomePage() {
       copy.sort((recipeA, recipeB) => {
         return recipeA.calories - recipeB.calories;
       });
-      SetRecipes(copy);
+      setRecipes(copy);
     } else {
-      SetRecipes(JSONrecipes);
+      setRecipes(JSONrecipes);
     }
   }
 
@@ -46,14 +46,14 @@ function HomePage() {
       const vegetarianRecipes = recipes.filter((recipe) => {
         return recipe.isVegetarian === true;
       });
-      SetRecipes(vegetarianRecipes);
+      setRecipes(vegetarianRecipes);
     } else {
-      SetRecipes(JSONrecipes);
+      setRecipes(JSONrecipes);
     }
   }
 
   function addToRecipes(newRecipe) {
-    SetRecipes([newRecipe, ...recipes]);
+    setRecipes([newRecipe, ...recipes]);
   }
 
   return (
