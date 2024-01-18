@@ -22,7 +22,7 @@ Welcome to Recipe Book, an application that empowers users to create, search, an
 
 # 🤝 Collaboration
 
-This project is a collaborative effort by Mária FRIH and Julien THOMAS, combining their skills to create an impressive Recipe Book Hunt.
+This project is a collaborative effort by Mária FRIH and Julien THOMAS using GitHub tools, combining their skills to create a Recipe Book App.
 
 # 🌐 Credits
 
