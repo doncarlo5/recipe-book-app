@@ -6,7 +6,7 @@
 
 # ⚡️ Introduction
 
-Welcome to Recipe Book, an application allows user to create, search, and delete their favorite recipes with ease.
+Welcome to Recipe Book, an application allows user to create, search, and delete recipes with ease.
 
 # 🔥 Features
 
