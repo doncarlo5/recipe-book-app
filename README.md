@@ -11,17 +11,16 @@ Welcome to Recipe Book, an application that empowers users to create, search, an
 # 🔥 Features
 
 - 🔖 **Add recipe**
-- ⚛ **Delete recipe**
+- 🗑️ **Delete recipe**
 - 🔍 **Search recipe**
 
 # ⚙️ Behind the scene
 
-- ✨ **React motion component** (warning message portrait mode)
+- ✨ **React motion component**
 - 🔀 **Routing**
 - 📂 **Manage JSON**
-- 🎞️ **Multiple CSS Animations**
 
-## 🤝 Collaboration
+# 🤝 Collaboration
 
 This project is a collaborative effort by Mária FRIH and Julien THOMAS, combining their skills to create an impressive Recipe Book Hunt.
 
