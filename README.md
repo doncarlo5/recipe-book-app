@@ -16,8 +16,8 @@ Welcome to Recipe Book, an application allows user to create, search, and delete
 
 # ⚙️ Behind the scene
 
-- ✨ **React motion component**
-- 🔀 **Routing**
+- ✨ **Framer Motion animation**
+- 🔀 **React Router**
 - 📂 **Manage JSON**
 
 # 🤝 Collaboration
